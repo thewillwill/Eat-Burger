@@ -2,14 +2,15 @@
 $(function() {
     $(".change-devoured").on("click", function(event) {
         var id = $(this).data("id");
-        var newDevoured = $(this).data("newdevoured");
+        console.log('id', id)
+        var newDevoured = $(this).data("new-devoured");
 
         var newDevouredState = {
             devoured: newDevoured
         };
 
         // Send the PUT request.
-        $.ajax("/api/cats/" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newDevouredState
         }).then(
@@ -24,14 +25,21 @@ $(function() {
 
     //on submit listener for the create burger form
 
-    $(".create-form").on("submit", function(event) {
+    $("#add-burger").on("click", function(event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
+
+        //check if the user has entered something
+        if (!$("#burger-name").val()) {
+            //exit
+            return;
+        }
 
         //create a new burger object
         var newBurger = {
             name: $("#burger-name").val().trim(),
-            devoured: $("[name=devoured]:checked").val().trim()
+            devoured: $("[name=devoured]:checked").val().trim(),
+            ingredients: $("#ingredients").val().trim()
         };
 
         // Send the POST request.
