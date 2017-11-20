@@ -52,12 +52,10 @@ body {
 	background: url(../images/plate2.png) no-repeat;
     background-position: bottom;
 	padding-bottom: 50px;
-	border: 1px black solid;
-	min-height: 200px;
+	min-height: 100px;
 }
 
 .food-title-eaten {
-	position: absolute;
-	bottom: 0;
-	padding-bottom: 50px;
+    margin-top: 50px;
+
 }
