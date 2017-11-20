@@ -3,25 +3,13 @@ Eat-Burger is a restaurant app that lets users input the names of burgers they'd
 
 
 ## Introduction:
-As part of coding bootcamp I created a full-stack site that t
+As part of a coding bootcamp I created a full-stack site that utilizes express, handlebars and mysql. The site takes in user input with the name of a burger and its ingredients. This is stored in the mysql database and the page is refreshed to display the burger along with the button to 'eat' the burger. When eat is clicked the burger is moved from the menu to the plate.
 
 
 
-### 1. Home Page
+### 1. Main Page
 -----------------------------------------------
-![Main Page](./home.png?raw=true "Friend-Finder Home Page")
-
-
-### 2. Manager Interface
------------------------------------------------
-
-![Survey Page](./survey.png?raw=true "Friend-Finder Survey Page")
-
-### 3. Supervisor Interface
------------------------------------------------
-
-![Modal Showing Result](./result.png?raw=true "Modal Showing Result")
-
+![Main Page](./eat-burger-main.png?raw=true "Eat Burger Main Page")
 
 ## Prerequisites:
 1. node.js
